@@ -72,7 +72,7 @@
 								tmux_pane_0: tmux_pane_0 {
 												compatible = "zmk,behavior-macro";
             						#binding-cells = <0>;
-												binding	= <&macro_press &kp LCTRL>
+												bindings	= <&macro_press &kp LCTRL>
 																, <&macro_tap &kp b>
 																, <&macro_release &kp LCTRL>
 																, <&macro_tap &kp 0>
@@ -82,7 +82,7 @@
 								tmux_pane_1: tmux_pane_1 {
 												compatible = "zmk,behavior-macro";
             						#binding-cells = <0>;
-												binding
+												bindings
 																= <&macro_press &kp LCTRL>
 																, <&macro_tap &kp b>
 																, <&macro_release &kp LCTRL>
@@ -93,7 +93,7 @@
 								tmux_pane_2: tmux_pane_2 {
 												compatible = "zmk,behavior-macro";
             						#binding-cells = <0>;
-												binding
+												bindings
 																= <&macro_press &kp LCTRL>
 																, <&macro_tap &kp b>
 																, <&macro_release &kp LCTRL>
@@ -104,7 +104,7 @@
 								tmux_pane_3: tmux_pane_3 {
 												compatible = "zmk,behavior-macro";
             						#binding-cells = <0>;
-												binding
+												bindings
 																= <&macro_press &kp LCTRL>
 																, <&macro_tap &kp b>
 																, <&macro_release &kp LCTRL>
@@ -115,7 +115,7 @@
 								tmux_pane_4: tmux_pane_4 {
 												compatible = "zmk,behavior-macro";
             						#binding-cells = <0>;
-												binding
+												bindings
 																= <&macro_press &kp LCTRL>
 																, <&macro_tap &kp b>
 																, <&macro_release &kp LCTRL>
@@ -126,7 +126,7 @@
 								tmux_copy_mode: tmux_copy_mode {
 												compatible = "zmk,behavior-macro";
             						#binding-cells = <0>;
-												binding
+												bindings
 																= <&macro_press &kp LCTRL>
 																, <&macro_tap &kp b>
 																, <&macro_release &kp LCTRL>
