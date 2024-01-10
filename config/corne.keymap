@@ -72,8 +72,7 @@
 								tmux_pane_0: tmux_pane_0 {
 												compatible = "zmk,behavior-macro";
             						#binding-cells = <0>;
-												binding
-																= <&macro_press &kp LCTRL>
+												binding	= <&macro_press &kp LCTRL>
 																, <&macro_tap &kp b>
 																, <&macro_release &kp LCTRL>
 																, <&macro_tap &kp 0>
