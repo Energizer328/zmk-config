@@ -109,6 +109,52 @@
 																, <&macro_tap &kp K>
 																;
 								};
+
+								tmux_vsplit: tmux_vsplit {
+												compatible = "zmk,behavior-macro";
+            						#binding-cells = <0>;
+												bindings
+																= <&macro_press &kp LCTRL>
+																, <&macro_tap &kp B>
+																, <&macro_release &kp LCTRL>
+																, <&macro_tap &kp V>
+																;
+								};
+
+								tmux_hsplit: tmux_hsplit {
+												compatible = "zmk,behavior-macro";
+            						#binding-cells = <0>;
+												bindings
+																= <&macro_press &kp LCTRL>
+																, <&macro_tap &kp B>
+																, <&macro_release &kp LCTRL>
+																, <&macro_tap &kp X>
+																;
+								};
+
+								tmux_new_pane: tmux_new_pane {
+												compatible = "zmk,behavior-macro";
+            						#binding-cells = <0>;
+												bindings
+																= <&macro_press &kp LCTRL>
+																, <&macro_tap &kp B>
+																, <&macro_release &kp LCTRL>
+																, <&macro_tap &kp C>
+																;
+								};
+
+								tmux_cmd: tmux_cmd {
+												compatible = "zmk,behavior-macro";
+            						#binding-cells = <0>;
+												bindings
+																= <&macro_press &kp LCTRL>
+																, <&macro_tap &kp B>
+																, <&macro_release &kp LCTRL>
+																, <&macro_press &kp LSHFT>
+																, <&macro_tap &kp SEMI>
+																, <&macro_release &kp LSHFT>
+																;
+								};
 				};
 
 				conditional_layers {
