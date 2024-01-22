@@ -22,10 +22,10 @@
                 };
                 lower_layer {
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4         &kp N5       &kp N6     &kp N7   &kp N8   &kp N9    &kp N0 &kp DEL
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT   &kp DOWN &kp UP   &kp RIGHT &trans &kp PG_UP
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans     &trans   &trans   &trans    &trans &kp PG_DN
-                                        &kp LGUI     &trans       &kp RET        &kp SPACE  &trans   &kp RALT
+   &kp TAB   &kp N1 &kp N2 &kp N3   &kp N4 &kp N5       &kp N6    &kp N7   &kp N8    &kp N9    &kp N0 &kp DEL
+   &trans    &trans &trans &trans   &trans &trans       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &trans &kp PG_UP
+   &kp LSHFT &trans &trans &trans   &trans &trans       &trans    &trans   &trans    &trans    &trans &kp PG_DN
+                           &kp LGUI &trans &kp RET      &kp SPACE &trans   &kp RALT
                         >;
                 };
 
@@ -40,9 +40,9 @@
 
                 tmux_layer {
                         bindings = <
-   &trans &tmux_pane_0 &tmux_pane_1 &tmux_pane_2 &tmux_pane_3 &tmux_pane_4     &trans &trans &trans          &trans &trans &trans
-   &trans &trans       &trans       &trans       &trans       &trans           &trans &trans &tmux_copy_mode &trans &trans &trans
-   &trans &trans       &trans       &trans       &trans       &trans           &trans &trans &trans          &trans &trans &trans
+   &trans     &tmux_pane_0 &tmux_pane_1 &tmux_pane_2 &tmux_pane_3 &tmux_pane_4     &trans &trans &trans          &trans &trans &trans
+   &trans     &trans       &trans       &trans       &trans       &trans           &trans &trans &tmux_copy_mode &trans &trans &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &trans       &trans       &trans           &trans &trans &trans          &trans &trans &trans
                                     &trans       &trans       &trans           &trans &trans &trans
                         >;
                 };
@@ -62,45 +62,41 @@
 								tmux_pane_1: tmux_pane_1 {
 												compatible = "zmk,behavior-macro";
             						#binding-cells = <0>;
-												bindings
-																= <&macro_press &kp LCTRL>
-																, <&macro_tap &kp B>
-																, <&macro_release &kp LCTRL>
-																, <&macro_tap &kp 1>
-																;
+												bindings	= <&macro_press &kp LCTRL>
+																  , <&macro_tap &kp B>
+																  , <&macro_release &kp LCTRL>
+																  , <&macro_tap &kp N1>
+																  ;
 								};
 
 								tmux_pane_2: tmux_pane_2 {
 												compatible = "zmk,behavior-macro";
             						#binding-cells = <0>;
-												bindings
-																= <&macro_press &kp LCTRL>
-																, <&macro_tap &kp B>
-																, <&macro_release &kp LCTRL>
-																, <&macro_tap &kp 2>
-																;
+												bindings	= <&macro_press &kp LCTRL>
+																  , <&macro_tap &kp B>
+																  , <&macro_release &kp LCTRL>
+																  , <&macro_tap &kp N2>
+																  ;
 								};
 
 								tmux_pane_3: tmux_pane_3 {
 												compatible = "zmk,behavior-macro";
             						#binding-cells = <0>;
-												bindings
-																= <&macro_press &kp LCTRL>
-																, <&macro_tap &kp B>
-																, <&macro_release &kp LCTRL>
-																, <&macro_tap &kp 3>
-																;
+												bindings	= <&macro_press &kp LCTRL>
+																  , <&macro_tap &kp B>
+																  , <&macro_release &kp LCTRL>
+																  , <&macro_tap &kp N3>
+																  ;
 								};
 
 								tmux_pane_4: tmux_pane_4 {
 												compatible = "zmk,behavior-macro";
             						#binding-cells = <0>;
-												bindings
-																= <&macro_press &kp LCTRL>
-																, <&macro_tap &kp B>
-																, <&macro_release &kp LCTRL>
-																, <&macro_tap &kp 4>
-																;
+												bindings	= <&macro_press &kp LCTRL>
+																  , <&macro_tap &kp B>
+																  , <&macro_release &kp LCTRL>
+																  , <&macro_tap &kp N4>
+																  ;
 								};
 
 								tmux_copy_mode: tmux_copy_mode {
