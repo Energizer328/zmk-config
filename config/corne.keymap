@@ -223,6 +223,7 @@
 																, <&macro_press &kp LALT>
 																, <&macro_tap &kp RIGHT>
 																, <&macro_release &kp LALT>
+																;
 								};
 
 								tmux_rsize_u: tmux_rsize_u {
@@ -235,6 +236,7 @@
 																, <&macro_press &kp LALT>
 																, <&macro_tap &kp UP>
 																, <&macro_release &kp LALT>
+																;
 								};
 
 								tmux_rsize_d: tmux_rsize_d {
@@ -247,6 +249,7 @@
 																, <&macro_press &kp LALT>
 																, <&macro_tap &kp DOWN>
 																, <&macro_release &kp LALT>
+																;
 								};
 				};
 
